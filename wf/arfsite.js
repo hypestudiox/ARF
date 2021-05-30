@@ -4504,7 +4504,7 @@
                   e ||
                   ((n = t('<a class="w-webflow-badge"></a>').attr(
                     "href",
-                    "https://webflow.com?utm_campaign=brandjs"
+                    ""
                   )),
                   (r = t("<img>")
                     .attr(
@@ -4803,7 +4803,7 @@
                 (function (t) {
                   var e = window.document.createElement("iframe");
                   (e.src =
-                    "https://webflow.com/site/third-party-cookie-check.html"),
+                    ""),
                     (e.style.display = "none"),
                     (e.sandbox = "allow-scripts allow-same-origin");
                   var n = function n(r) {
@@ -4819,7 +4819,7 @@
                     window.document.body.appendChild(e);
                 })(function (e) {
                   t.ajax({
-                    url: g("https://editor-api.webflow.com/api/editor/view"),
+                    url: g(""),
                     data: { siteId: a.attr("data-wf-site") },
                     xhrFields: { withCredentials: !0 },
                     dataType: "json",
@@ -4862,7 +4862,7 @@
         function h(t) {
           return t.indexOf("//") >= 0
             ? t
-            : g("https://editor-api.webflow.com" + t);
+            : g("" + t);
         }
         function g(t) {
           return t.replace(/([^:])\/\//g, "$1/");
@@ -10290,12 +10290,12 @@
           (s.ready = s.design = s.preview = function () {
             !(function () {
               (o = t("html").attr("data-wf-site")),
-                (u = "https://webflow.com/api/v1/form/" + o),
+                (u = "" + o),
                 d &&
-                  u.indexOf("https://webflow.com") >= 0 &&
+                  u.indexOf("") >= 0 &&
                   (u = u.replace(
-                    "https://webflow.com",
-                    "http://formdata.webflow.com"
+                    "",
+                    ""
                   ));
               if (
                 ((c = "".concat(u, "/signFile")), !(n = t(p + " form")).length)
